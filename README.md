@@ -61,32 +61,32 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │                         SentimentAI                             │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│  Input Layer                                                     │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────────┐   │
-│  │  Plain   │  │   CSV    │  │   JSON   │  │   REST API   │   │
-│  │   Text   │  │   File   │  │   File   │  │   Request    │   │
-│  └────┬─────┘  └────┬─────┘  └────┬─────┘  └──────┬───────┘   │
-│       └─────────────┴──────────────┴────────────────┘           │
-│                           │                                      │
-│  Preprocessing Layer      ▼                                     │
+│                                                                 │
+│  Input Layer                                                    │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────────┐     │
+│  │  Plain   │  │   CSV    │  │   JSON   │  │   REST API   │     │
+│  │   Text   │  │   File   │  │   File   │  │   Request    │     │
+│  └────┬─────┘  └────┬─────┘  └────┬─────┘  └──────┬───────┘     │
+│       └─────────────┴─────────────┴───────────────┘             │
+│                             │                                   │
+│  Preprocessing Layer        ▼                                   │
 │  ┌────────────────────────────────────────────────────────────┐ │
 │  │  TextCleaner                                               │ │
-│  │  HTML Strip → URL Remove → Mention Strip → Emoji Convert  │ │
-│  │  → Contraction Expand → Lowercase → Lemmatize             │ │
+│  │  HTML Strip → URL Remove → Mention Strip → Emoji Convert   │ │
+│  │  → Contraction Expand → Lowercase → Lemmatize              │ │
 │  └──────────────────────────┬─────────────────────────────────┘ │
-│                              │                                   │
-│  Model Layer                 ▼                                  │
-│  ┌────────────┐  ┌──────────────────┐  ┌─────────────────────┐ │
+│                             │                                   │
+│  Model Layer                ▼                                   │
+│  ┌────────────┐  ┌───────────────────┐  ┌─────────────────────┐ │
 │  │   VADER    │  │  TF-IDF + sklearn │  │  DistilBERT /       │ │
-│  │  (Lexicon) │  │  (LR / SVM / NB  │  │  HuggingFace        │ │
-│  │            │  │  / RandomForest) │  │  Transformer        │ │
-│  └────────────┘  └──────────────────┘  └─────────────────────┘ │
-│                              │                                   │
-│  Output Layer                ▼                                  │
+│  │  (Lexicon) │  │  (LR / SVM / NB   │  │  HuggingFace        │ │
+│  │            │  │  / RandomForest)  │  │  Transformer        │ │
+│  └────────────┘  └───────────────────┘  └─────────────────────┘ │
+│                             │                                   │
+│  Output Layer               ▼                                   │
 │  ┌────────────────────────────────────────────────────────────┐ │
 │  │  SentimentResult                                           │ │
-│  │  { label, score, scores: {pos, neg, neu}, metadata }      │ │
+│  │  { label, score, scores: {pos, neg, neu}, metadata }       │ │
 │  └────────────────────────────────────────────────────────────┘ │
 └─────────────────────────────────────────────────────────────────┘
 ```
