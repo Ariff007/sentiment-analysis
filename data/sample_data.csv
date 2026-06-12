@@ -1,0 +1,98 @@
+text,sentiment
+"I absolutely love this product! It exceeded all my expectations.",positive
+"This is the best purchase I've ever made. Highly recommend!",positive
+"Amazing quality and fast shipping. 5 stars! 😍",positive
+"Fantastic customer service, they resolved my issue immediately.",positive
+"This product changed my life! So happy with it.",positive
+"Great value for money. Worth every penny.",positive
+"I'm really impressed by the build quality and design.",positive
+"Excellent product, works exactly as described.",positive
+"Just received my order and I'm over the moon! 🎉",positive
+"The app is super easy to use and very intuitive.",positive
+"Good product overall. Nothing special but does the job.",neutral
+"It's okay I guess. Not as good as I expected.",neutral
+"The product is fine. Average quality for the price.",neutral
+"Not bad, not great. Somewhere in the middle.",neutral
+"Decent product. Would consider repurchasing.",neutral
+"Mixed feelings about this one. Some things are great, others not so much.",neutral
+"It works as described but nothing extraordinary.",neutral
+"Pretty standard product. Does what it says on the tin.",neutral
+"Meets my basic needs but there's room for improvement.",neutral
+"Average experience. Not sure if I'd recommend it.",neutral
+"Terrible quality. Broke within a week of use.",negative
+"Worst purchase ever! Complete waste of money. 😡",negative
+"The product arrived damaged and customer support was useless.",negative
+"Absolutely disappointed. Nothing like what was advertised.",negative
+"Do NOT buy this. It's a scam. Stay away!",negative
+"Horrible experience from start to finish.",negative
+"Returned it immediately. Garbage quality.",negative
+"The app crashes constantly. Completely unusable.",negative
+"Spent £50 and it stopped working after 2 days. Furious!",negative
+"Zero stars if I could. Avoid at all costs.",negative
+"I love spending time with my family on weekends.",positive
+"The weather today is just perfect for a walk.",positive
+"Can't believe how rude the staff were. Never going back.",negative
+"So tired of dealing with incompetent service. Frustrating!",negative
+"Honestly pretty neutral about the whole thing.",neutral
+"This tweet is just sharing a fact, nothing more.",neutral
+"😊 Feeling grateful today for all the good in my life.",positive
+"😢 Having a really rough day. Everything going wrong.",negative
+"Just arrived at the airport. Flight was on time! ✈️",positive
+"My flight got cancelled. Absolutely fuming. 🤬",negative
+"The food at this restaurant was divine! Highly recommend.",positive
+"Never eating here again. Disgusting food and poor hygiene.",negative
+"What a mediocre meal. Expected better from a place like this.",neutral
+"The conference was incredibly insightful and well-organized.",positive
+"Boring presentation. Complete waste of a Saturday afternoon.",negative
+"The workshop was okay, covered some useful topics.",neutral
+"Our team won the championship! Best day ever! 🏆🥇",positive
+"We lost the finals. Heartbreaking defeat after all that effort.",negative
+"It was a tough match but a fair result in the end.",neutral
+"#BlackFriday deals are insane this year! Already ordered 3 items!",positive
+"#BlackFriday is just corporate greed. Nothing special about the deals.",negative
+"Got a decent deal on #BlackFriday. Nothing spectacular.",neutral
+"Just watched the new season finale. My mind is blown! 🤯",positive
+"That season finale was terrible. What a disappointing ending.",negative
+"The finale was okay. A bit rushed but acceptable conclusion.",neutral
+"Customer support team went above and beyond! Truly exceptional.",positive
+"Been on hold for 3 hours. Your customer support is a joke.",negative
+"Support ticket resolved eventually. Took longer than expected.",neutral
+"The new software update is smooth and full of great features.",positive
+"This update ruined everything. My workflow is completely broken.",negative
+"Mixed bag update – some improvements, some regressions.",neutral
+"Just graduated from university! So proud of this achievement! 🎓",positive
+"Failed my final exam. Feeling crushed and hopeless right now.",negative
+"Completed the course. Ready to move on to the next challenge.",neutral
+"Woke up to a beautiful sunny morning. Life is good! ☀️",positive
+"Another Monday morning. Dread getting out of bed honestly.",negative
+"Normal day, nothing eventful. Just got through it.",neutral
+"The charity event raised £50,000! So inspired by the community.",positive
+"The fundraiser was a huge failure. Only raised a fraction of the goal.",negative
+"The event went okay but turnout was lower than anticipated.",neutral
+"Starting my new job today! Nervous but so excited! 💼",positive
+"Got laid off today. Completely blindsided. Feeling lost.",negative
+"First day at work was fine. Nothing unexpected.",neutral
+"The book I just finished is an absolute masterpiece. 📚",positive
+"Couldn't get through this book. Dry, boring, poorly written.",negative
+"Finished the book. It was alright, nothing groundbreaking.",neutral
+"Had the most amazing holiday! Will definitely come back. 🌴",positive
+"Holiday ruined by constant rain and awful hotel service.",negative
+"Holiday was okay. Had some good moments and some bad ones.",neutral
+"Can't believe how much I learned at the hackathon this weekend!",positive
+"The hackathon was disorganized and a complete waste of time.",negative
+"Hackathon was a decent experience. Learned a few new tricks.",neutral
+"My baby said their first word today! The happiest moment! 👶",positive
+"Feeling really alone and disconnected lately. Not sure why.",negative
+"Just another regular Tuesday. Nothing to write home about.",neutral
+"The concert was absolutely electric! Best night of my life! 🎸",positive
+"That concert was overpriced and the sound quality was terrible.",negative
+"Concert was decent but the venue was a bit too crowded.",neutral
+"Finally got my dream car! Couldn't be happier! 🚗",positive
+"My car broke down on the motorway. What a nightmare.",negative
+"Car service was routine. Nothing major, just standard maintenance.",neutral
+"Won £500 on the lottery! Treating myself tonight! 🍾",positive
+"Lost a big client today. Really worried about the business.",negative
+"Monthly review went as expected. No surprises.",neutral
+"The new restaurant in town is absolutely gorgeous. 5/5!",positive
+"That place was a health hazard. Reported it to the council.",negative
+"Tried the new place. Food was fine, nothing remarkable.",neutral
