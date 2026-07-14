@@ -1,0 +1,109 @@
+# ============================================================
+# Sentiment Analysis - Central Configuration
+# ============================================================
+
+app:
+  name: "SentimentAI"
+  version: "1.0.0"
+  description: "Multi-model Sentiment Analysis System"
+  debug: false
+
+# --- Paths ---
+paths:
+  data_dir: "data"
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  models_dir: "models"
+  logs_dir: "logs"
+  sample_data: "data/sample_data.csv"
+
+# --- Preprocessing ---
+preprocessing:
+  max_length: 512           # Max token length for transformers
+  remove_urls: true
+  remove_mentions: true
+  remove_hashtags: false    # Keep hashtags as context (strip # symbol)
+  remove_emojis: false      # Convert emojis to text
+  expand_contractions: true
+  lowercase: true
+  remove_punctuation: false
+  min_text_length: 3
+
+# --- Lexicon Model (VADER) ---
+lexicon_model:
+  name: "vader"
+  compound_threshold_positive: 0.05
+  compound_threshold_negative: -0.05
+  social_media_mode: true
+
+# --- ML Model ---
+ml_model:
+  name: "ml_classifier"
+  algorithm: "logistic_regression"   # options: logistic_regression, svm, naive_bayes, random_forest
+  vectorizer: "tfidf"
+  tfidf:
+    max_features: 50000
+    ngram_range: [1, 3]
+    min_df: 2
+    max_df: 0.95
+    sublinear_tf: true
+  logistic_regression:
+    C: 1.0
+    max_iter: 1000
+    solver: "lbfgs"
+  svm:
+    C: 1.0
+    kernel: "linear"
+  random_forest:
+    n_estimators: 200
+    max_depth: null
+  cross_validation:
+    enabled: true
+    n_folds: 5
+  test_size: 0.2
+  random_state: 42
+
+# --- Transformer Model ---
+transformer_model:
+  name: "transformer"
+  model_name: "distilbert-base-uncased-finetuned-sst-2-english"
+  tokenizer_name: "distilbert-base-uncased-finetuned-sst-2-english"
+  max_length: 512
+  batch_size: 32
+  device: "auto"            # auto, cpu, cuda, mps
+
+# --- Training ---
+training:
+  default_model: "ml"       # ml, transformer
+  epochs: 3
+  learning_rate: 2.0e-5
+  batch_size: 16
+  warmup_steps: 500
+  weight_decay: 0.01
+  save_best: true
+  early_stopping_patience: 3
+
+# --- Evaluation ---
+evaluation:
+  metrics: ["accuracy", "precision", "recall", "f1", "roc_auc"]
+  average: "weighted"
+  plot_confusion_matrix: true
+  output_report: true
+
+# --- API ---
+api:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 1
+  reload: false
+  default_model: "vader"    # Default model for API requests
+  max_batch_size: 100
+  cors_origins: ["*"]
+
+# --- Logging ---
+logging:
+  level: "INFO"
+  format: "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+  file: "logs/sentiment_analysis.log"
+  max_bytes: 10485760   # 10 MB
+  backup_count: 5
